@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BLL\Manager\BusinessEntitiesRepository.cs" />
+    <Compile Remove="DAL\Repository\BusinessRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BLL\Interface\" />
+    <Folder Include="BLL\Manager\" />
+  </ItemGroup>
+
+</Project>

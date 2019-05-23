@@ -1,0 +1,7 @@
+F:\New folder\TestProject\TestAppDAL\bin\Debug\netstandard1.4\TestAppDAL.deps.json
+F:\New folder\TestProject\TestAppDAL\bin\Debug\netstandard1.4\TestAppDAL.dll
+F:\New folder\TestProject\TestAppDAL\bin\Debug\netstandard1.4\TestAppDAL.pdb
+F:\New folder\TestProject\TestAppDAL\obj\Debug\netstandard1.4\TestAppDAL.csprojResolveAssemblyReference.cache
+F:\New folder\TestProject\TestAppDAL\obj\Debug\netstandard1.4\TestAppDAL.AssemblyInfo.cs
+F:\New folder\TestProject\TestAppDAL\obj\Debug\netstandard1.4\TestAppDAL.dll
+F:\New folder\TestProject\TestAppDAL\obj\Debug\netstandard1.4\TestAppDAL.pdb

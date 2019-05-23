@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestDbModelStoreContainer" CdmEntityContainer="TestDbEntities">
+    <EntitySetMapping Name="BusinessEntities">
+      <EntityTypeMapping TypeName="TestDbModel.BusinessEntity">
+        <MappingFragment StoreEntitySet="BusinessEntities">
+          <ScalarProperty Name="BusinessId" ColumnName="BusinessId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="ReferredBy" ColumnName="ReferredBy" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="LoginUrl" ColumnName="LoginUrl" />
+          <ScalarProperty Name="SecurityCode" ColumnName="SecurityCode" />
+          <ScalarProperty Name="SMTPServer" ColumnName="SMTPServer" />
+          <ScalarProperty Name="SMTPPort" ColumnName="SMTPPort" />
+          <ScalarProperty Name="SMTPUsername" ColumnName="SMTPUsername" />
+          <ScalarProperty Name="SMTPPassword" ColumnName="SMTPPassword" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+          <ScalarProperty Name="UpdatedOnUtc" ColumnName="UpdatedOnUtc" />
+          <ScalarProperty Name="CurrentBalance" ColumnName="CurrentBalance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

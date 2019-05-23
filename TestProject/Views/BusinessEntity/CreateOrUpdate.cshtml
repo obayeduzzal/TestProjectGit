@@ -1,0 +1,317 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<div class="form-horizontal">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4">
+                    Id/Code
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Code" id="code" class="form-control" disabled="disabled"/>
+                    <input type="hidden" name="BusinessId" id="BusinessId" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Email
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Email" id="Email" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Name
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Name" id="Name" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Street
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Street" id="Street" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    City
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="City" id="City" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    State
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="State" id="State" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Zip
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Zip" id="Zip" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Country
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Country" id="Country" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Mobile
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Mobile" id="Mobile" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Phone
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="Phone" id="Phone" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Contact Person
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="ContactPerson" id="ContactPerson" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Referred By
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="ReferredBy" id="ReferredBy" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Balance
+                </label>
+                <div class="col-md-8">
+                    <input type="text" onkeyup="checkDec(this);" name="Balance" id="Balance" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Log in URL
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="LoginUrl" id="LoginUrl" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Security Code
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="SecurityCode" id="SecurityCode" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    SMTP Server
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="SMTPServer" id="SMTPServer" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    SMTP Port
+                </label>
+                <div class="col-md-8">
+                    <input type="number" name="SMTPPort" id="SMTPPort" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    SMTP Username
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="SMTPUsername" id="SMTPUsername" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    SMTP Password
+                </label>
+                <div class="col-md-8">
+                    <input type="text" name="SMTPPassword" id="SMTPPassword" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Current Balance
+                </label>
+                <div class="col-md-8">
+                    <input type="text" onkeyup="checkDec(this);" name="CurrentBalance" id="CurrentBalance" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-md-4">
+                    Logo
+                </label>
+                <div class="col-md-8">
+                    <table>
+                        <tr>
+                            <td><img src=""  alt="Image Upload" id="logo" style="height: 120px; width: 120px;" class="thumbnail" /></td>
+                            <td>&nbsp;</td>
+                            <td><input type="file" name="ImageData" id="ImageData" onchange="ReadURL(this);" accept=".jpg,.jpeg,.gif,.png" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4">
+                    Status
+                </label>
+                <div class="col-md-8">
+                    <input type="radio" name="Status" value="1"> New &nbsp;
+                    <input type="radio" name="Status" value="2"> Active &nbsp;
+                    <input type="radio" name="Status" value="3"> Inactive &nbsp;
+                    <input type="radio" name="Status" value="4"> Locked
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-5 col-md-7">
+            <button class="btn btn-primary" id="submitButton" onclick="SaveData()">Submit</button>&nbsp;
+            <button class="btn btn-primary" id="clearButton" onclick="Clear()">Clear</button>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            GetNewCode();
+        });
+
+        function GetNewCode() {
+            $.ajax({
+                url: "/BusinessEntity/GetNewCode",
+                type: "POST",
+                dataType: "json",
+                data: {},
+                success: function (data) {
+                    $('#code').val(data);
+                }
+            });
+        }
+
+        function ReadURL(input) {
+            if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#logo').attr('src', e.target.result)
+                            .width(120)
+                            .height(120);
+                    };
+                    reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function SaveData() {
+            var formSubmitData = new FormData();
+            var fileData = document.getElementById("ImageData").files[0];
+            formSubmitData.append("imageFile", fileData);
+            var status = document.querySelector('input[name="Status"]:checked').value
+            formSubmitData.append("BusinessId", $('#BusinessId').val());
+            formSubmitData.append("Code", $('#code').val());
+            formSubmitData.append("Email", $('#Email').val());
+            formSubmitData.append("Name", $('#Name').val());
+            formSubmitData.append("Street", $('#Street').val());
+            formSubmitData.append("City", $('#City').val());
+            formSubmitData.append("State", $('#State').val());
+            formSubmitData.append("Zip", $('#Zip').val());
+            formSubmitData.append("Country", $('#Country').val());
+            formSubmitData.append("Mobile", $('#Mobile').val());
+            formSubmitData.append("Phone", $('#Phone').val());
+            formSubmitData.append("ContactPerson", $('#ContactPerson').val());
+            formSubmitData.append("ReferredBy", $('#ReferredBy').val());
+            formSubmitData.append("Status", status);
+            formSubmitData.append("Balance", $('#Balance').val());
+            formSubmitData.append("LoginUrl", $('#LoginUrl').val());
+            formSubmitData.append("SecurityCode", $('#SecurityCode').val());
+            formSubmitData.append("SMTPServer", $('#SMTPServer').val());
+            formSubmitData.append("SMTPPort", $('#SMTPPort').val());
+            formSubmitData.append("SMTPUsername", $('#SMTPUsername').val());
+            formSubmitData.append("SMTPPassword", $('#SMTPPassword').val());
+            formSubmitData.append("CurrentBalance", $('#CurrentBalance').val());
+            $.ajax({
+                url: '/BusinessEntity/CreateOrUpdate',
+                method: 'POST',
+                data: formSubmitData,
+                processData: false,
+                contentType: false,
+                cache: false,
+                error: function () {
+                    alert("An error occoured!");
+                },
+                success: function (response) {
+                    Clear();
+                    alert(response.message);                  
+                }
+            });
+        }
+
+        function Clear() {
+            $('#BusinessId').val('');
+            $('#code').val('');
+            $('#Email').val('');
+            $('#Name').val('');
+            $('#Street').val('');
+            $('#City').val('');
+            $('#State').val('');
+            $('#Zip').val('');
+            $('#Country').val('');
+            $('#Mobile').val('');
+            $('#Phone').val('');
+            $('#ContactPerson').val('');
+            $('#Status').val('');
+            $('#Balance').val('');
+            $('#LoginUrl').val('');
+            $('#SecurityCode').val('');
+            $('#SMTPServer').val('');
+            $('#SMTPPort').val('');
+            $('#SMTPUsername').val('');
+            $('#SMTPPassword').val('');
+            $('#CurrentBalance').val('');
+            $("#logo").attr('src', "");
+            $("#ImageData").val('');
+            $('#ReferredBy').val('');
+        }
+        function checkDec(el) {
+            var ex = /^[0-9]+\.?[0-9]*$/;
+            if (ex.test(el.value) == false) {
+                el.value = el.value.substring(0, el.value.length - 1);
+            }
+        }
+    </script>  
+}
+
+
+
